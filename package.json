@@ -1,0 +1,18 @@
+{
+  "name": "scl-pitch-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "离线 Scala SCL 微分音音阶与键盘周期音高映射后端（API + CLI）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "node dist/src/index.js serve",
+    "cli": "node dist/src/index.js",
+    "demo": "node dist/src/index.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
